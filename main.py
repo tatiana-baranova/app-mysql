@@ -12,6 +12,11 @@ cur = db.cursor()
 # sql = "DROP DATABASE `python`"
 # sql = "SHOW DATABASES"
 # sql = "CREATE TABLE users(name VARCHAR(50), age INT(3))"
+# sql = "SHOW TABLES"
+
+# Самостійна робота
+# sql = "CREATE TABLE Book(id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(100), author VARCHAR(50), publication_year INT, genre VARCHAR(30))"
+
 sql = "SHOW TABLES"
 cur.execute(sql)
 
