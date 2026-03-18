@@ -1,10 +1,22 @@
 import mysql.connector
-mydb = mysql.connector.connect(
+db = mysql.connector.connect(
     host='localhost',
     user='root',
-    password= ''
+    password='',
+    database="python-example"
 )
 
-print(mydb)
+cur = db.cursor()
 
-print('Hello')
+# sql = "CREATE DATABASE `python-example`"
+# sql = "DROP DATABASE `python`"
+# sql = "SHOW DATABASES"
+# sql = "CREATE TABLE users(name VARCHAR(50), age INT(3))"
+sql = "SHOW TABLES"
+cur.execute(sql)
+
+for el in cur:
+    print(el)
+
+cur.close()
+db.close()
