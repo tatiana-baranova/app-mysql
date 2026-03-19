@@ -27,7 +27,7 @@ cur = db.cursor()
 # ]
 
 # cur.execute(sql)
-sql = "SELECT title, intro FROM art WHERE intro LIKE %s OR id > %s"
+sql = "SELECT title, intro FROM art WHERE intro LIKE %s OR id > %s ORDER BY id DESC LIMIT 2 OFFSET 1"
 cur.execute(sql, ('%2 статті%', 3))
 
 res = cur.fetchall()
