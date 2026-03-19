@@ -34,10 +34,15 @@ cur = db.cursor()
 # for el in res:
 #     print(el)
 
-# оновлення данних
-sql = "UPDATE art SET title = %s, date = %s WHERE id = %s"
-cur.execute(sql, ('New title', '2010-01-01', 1))
-# db.commit()
+# оновлення даних
+# sql = "UPDATE art SET title = %s, date = %s WHERE id = %s"
+# cur.execute(sql, ('New title', '2010-01-01', 1))
+
+# видалення даних
+# DROP TABLE art
+sql = "DELETE FROM art WHERE id < 2"
+cur.execute(sql)
+db.commit()
 
 # for el in cur:
 #     print(el)

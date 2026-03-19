@@ -27,14 +27,17 @@ cur = db.cursor()
 # ]
 # cur.executemany(sql, books)
 # sql = "SELECT title, genre FROM Books WHERE genre <> 'Fiction'"
-sql = "SELECT title, author, publication_year FROM Books WHERE publication_year > '1950' ORDER BY publication_year DESC"
+# sql = "SELECT title, author, publication_year FROM Books WHERE publication_year > '1950' ORDER BY publication_year DESC"
+# cur.execute(sql)
+#
+# res = cur.fetchall()
+# for el in res:
+#     print(el)
+
+# sql = "UPDATE Books SET publication_year = '1950' WHERE title = '1984'"
+sql = "DELETE FROM Books WHERE title = 'To Kill a Mockingbird'"
 cur.execute(sql)
-
-res = cur.fetchall()
-for el in res:
-    print(el)
-
-# db.commit() #оновлення бази після додавання інформації
+db.commit() #оновлення бази після додавання інформації
 
 
 cur.close()
