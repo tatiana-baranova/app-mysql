@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1c57c66-f5c5-4bf8-8836-eb1d50ef9ce0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/experiment/task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/task1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment/task2.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/homework.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +37,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.homework.executor": "Run",
     "Python.main.executor": "Run",
     "Python.task1.executor": "Run",
     "Python.task2.executor": "Run",
